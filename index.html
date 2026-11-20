@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuschinski Law PLLC | Your Relationship. Your Future. Your Terms.</title>
+  <meta name="description" content="Thoughtful prenuptial, postnuptial, cohabitation and estate planning agreements for every stage of your relationship.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#10264A',
+            gold: '#B58A45',
+            ivory: '#F7F5F0',
+            ink: '#252D38',
+            muted: '#777B80'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['DM Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; }
+    .serif { font-family: 'Playfair Display', serif; }
+    .hero-image {
+      background:
+        linear-gradient(90deg, rgba(9,26,49,.55), rgba(9,26,49,.03)),
+        url('hero (2).png')
+        center 42% / cover;
+    }
+    .philosophy-section {
+      position: relative;
+      isolation: isolate;
+      background: url('philosophis-2.jpg') center 45% / cover;
+    }
+    .philosophy-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(9,26,49,.58);
+      z-index: -1;
+    }
+    .image-card {
+      transition: transform .5s ease;
+    }
+    .image-card:hover { transform: translateY(-5px); }
+    .gold-line { width: 48px; height: 1px; background: #B58A45; }
+    .nav-link { transition: color .25s; }
+    .nav-link:hover { color: #B58A45; }
+    .menu-open { display: flex !important; }
+  </style>
+</head>
+
+<body class="bg-white text-ink">
+
+<!-- NAVIGATION -->
+<header class="relative z-50 bg-white">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-16">
+    <div class="h-24 flex items-center justify-between">
+
+      <!-- LOGO: Save the supplied logo as tuschinski-law-logo.jpg -->
+      <a href="#" class="block w-52 md:w-64">
+        <img src="Tuschinski-Law (1).png"
+             alt="Tuschinski Law PLLC"
+             class="w-full h-auto object-contain translate-y-2">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9 text-[12px] tracking-[1.5px] uppercase font-semibold text-navy">
+        <a href="#about" class="nav-link">Our Philosophy</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#approach" class="nav-link">Our Approach</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <a href="#contact"
+         class="hidden lg:inline-flex bg-navy text-white px-7 py-4 text-[11px] tracking-[1.5px] uppercase hover:bg-gold transition">
+        Schedule a Consultation
+      </a>
+
+      <button id="menuBtn" class="lg:hidden text-navy text-2xl" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="mobileMenu" class="hidden flex-col gap-5 pb-7 text-sm uppercase tracking-wider text-navy lg:hidden">
+      <a href="#about">Our Philosophy</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Our Approach</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="text-gold">Schedule a Consultation →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-image min-h-[650px] lg:min-h-[760px] flex items-center relative">
+  <div class="max-w-[1440px] w-full mx-auto px-6 lg:px-16 py-24">
+    <div class="max-w-[680px] text-white">
+
+      <div class="flex items-center gap-4 mb-8">
+        <div class="w-12 h-px bg-gold"></div>
+        <span class="text-[11px] tracking-[3px] uppercase text-white/90">
+          Thoughtful Planning. Lasting Clarity.
+        </span>
+      </div>
+
+      <h1 class="serif text-5xl sm:text-6xl lg:text-[76px] leading-[1.08] font-normal mb-8">
+        Your Relationship.<br>
+        Your Future.<br>
+        <span class="italic text-[#D9B778]">Your Terms.</span>
+      </h1>
+
+      <p class="text-base md:text-lg leading-8 text-white/85 max-w-[520px] mb-10">
+        Thoughtful legal agreements for the life you're building together.
+        Because planning for the future is one of the most meaningful
+        things you can do for each other.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#services"
+           class="bg-gold text-white px-8 py-4 text-[11px] uppercase tracking-[1.5px] hover:bg-white hover:text-navy transition">
+          Explore Your Options
+        </a>
+        <a href="#about"
+           class="border border-white/70 text-white px-8 py-4 text-[11px] uppercase tracking-[1.5px] hover:bg-white hover:text-navy transition">
+          Discover Our Philosophy
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 right-8 hidden md:block text-white/70 text-[10px] tracking-[3px] uppercase">
+    Plan with purpose. Live with confidence.
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section id="about" class="py-28 lg:py-36 bg-ivory">
+  <div class="max-w-[1200px] mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-12 gap-14 items-center">
+
+      <div class="lg:col-span-5">
+        <!-- IMAGE KEYWORD:
+             couple talking together at home, candid editorial photography -->
+        <img
+          src="philosofis2.jpg"
+          alt="Couple enjoying a meaningful conversation"
+          class="w-full h-[470px] object-cover">
+      </div>
+
+      <div class="lg:col-span-7 lg:pl-10">
+        <div class="flex items-center gap-4 mb-7">
+          <div class="gold-line"></div>
+          <span class="text-[11px] uppercase tracking-[2.5px] text-gold font-semibold">
+            A Different Perspective
+          </span>
+        </div>
+
+        <h2 class="serif text-4xl md:text-5xl leading-tight text-navy mb-8">
+          Planning Together<br>
+          Is an Act of <i>Trust.</i>
+        </h2>
+
+        <p class="text-muted leading-8 mb-6">
+          Every relationship is unique. So are the lives, goals, and
+          responsibilities that come with it.
+        </p>
+
+        <p class="text-muted leading-8 mb-6">
+          Whether you're preparing for marriage, building a life together
+          without it, or navigating a new chapter as a couple, thoughtful
+          legal planning can help you move forward with greater clarity.
+        </p>
+
+        <p class="text-muted leading-8 mb-9">
+          We believe agreements aren't about expecting the worst.
+          They're about understanding each other, honoring what matters,
+          and making intentional decisions about the future.
+        </p>
+
+        <a href="#approach" class="inline-flex items-center gap-4 text-navy text-xs font-semibold uppercase tracking-widest">
+          Get to Know Our Approach
+          <span class="text-gold text-xl">→</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-28 lg:py-36 bg-white">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-12">
+
+    <div class="text-center max-w-[720px] mx-auto mb-16">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="gold-line"></div>
+        <span class="text-[11px] uppercase tracking-[2.5px] text-gold font-semibold">
+          How We Can Help
+        </span>
+        <div class="gold-line"></div>
+      </div>
+
+      <h2 class="serif text-4xl md:text-5xl text-navy mb-6">
+        Clarity for Every Chapter.
+      </h2>
+
+      <p class="text-muted leading-8">
+        Legal agreements designed around your relationship, your priorities,
+        and the future you envision.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- SERVICE 01 -->
+      <article class="image-card bg-ivory p-9 lg:p-12 border border-[#EAE6DE]">
+        <span class="text-gold text-xs tracking-[2px]">01 / BEFORE MARRIAGE</span>
+        <h3 class="serif text-3xl text-navy mt-5 mb-5">Prenuptial Agreements</h3>
+        <p class="text-muted leading-7 mb-8">
+          Start your marriage with open conversations and shared expectations.
+          Establish a clear understanding of financial rights, responsibilities,
+          and the future you're building together.
+        </p>
+        <a href="#contact" class="text-navy text-xs uppercase tracking-widest font-semibold">
+          Explore Prenuptial Planning <span class="text-gold ml-2">→</span>
+        </a>
+      </article>
+
+      <!-- SERVICE 02 -->
+      <article class="image-card bg-ivory p-9 lg:p-12 border border-[#EAE6DE]">
+        <span class="text-gold text-xs tracking-[2px]">02 / DURING MARRIAGE</span>
+        <h3 class="serif text-3xl text-navy mt-5 mb-5">Postnuptial Agreements</h3>
+        <p class="text-muted leading-7 mb-8">
+          Life evolves. Whether you're navigating a business venture,
+          inheritance, career change, or growing family, revisit your
+          financial understanding with intention.
+        </p>
+        <a href="#contact" class="text-navy text-xs uppercase tracking-widest font-semibold">
+          Explore Postnuptial Planning <span class="text-gold ml-2">→</span>
+        </a>
+      </article>
+
+      <!-- SERVICE 03 -->
+      <article class="image-card bg-ivory p-9 lg:p-12 border border-[#EAE6DE]">
+        <span class="text-gold text-xs tracking-[2px]">03 / BUILDING A LIFE TOGETHER</span>
+        <h3 class="serif text-3xl text-navy mt-5 mb-5">Cohabitation Agreements</h3>
+        <p class="text-muted leading-7 mb-8">
+          You don't have to be married to build a meaningful life together.
+          Define shared property, financial responsibilities, and expectations
+          with a thoughtful agreement.
+        </p>
+        <a href="#contact" class="text-navy text-xs uppercase tracking-widest font-semibold">
+          Explore Cohabitation Planning <span class="text-gold ml-2">→</span>
+        </a>
+      </article>
+
+      <!-- SERVICE 04 -->
+      <article class="image-card bg-ivory p-9 lg:p-12 border border-[#EAE6DE]">
+        <span class="text-gold text-xs tracking-[2px]">04 / PROTECTING YOUR LEGACY</span>
+        <h3 class="serif text-3xl text-navy mt-5 mb-5">Estate Planning</h3>
+        <p class="text-muted leading-7 mb-8">
+          Consider how your assets, wishes, and responsibilities should
+          be addressed in the future. Create a plan that reflects the
+          people and priorities that matter most.
+        </p>
+        <a href="#contact" class="text-navy text-xs uppercase tracking-widest font-semibold">
+          Explore Estate Planning <span class="text-gold ml-2">→</span>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIFE CHANGES -->
+<section class="bg-navy text-white">
+  <div class="grid lg:grid-cols-2">
+
+    <div class="min-h-[460px] lg:min-h-[620px]">
+      <!-- IMAGE KEYWORD:
+           sophisticated modern family gathering at home, editorial photography -->
+      <img
+        src="family.jpg"
+        alt="Family spending time together"
+        class="w-full h-full object-cover">
+    </div>
+
+    <div class="px-8 py-20 lg:px-20 lg:py-28 flex flex-col justify-center">
+      <div class="flex items-center gap-4 mb-7">
+        <div class="gold-line"></div>
+        <span class="text-[11px] uppercase tracking-[2.5px] text-[#D9B778]">
+          Life Happens
+        </span>
+      </div>
+
+      <h2 class="serif text-4xl lg:text-5xl leading-tight mb-8">
+        Your Life Changes.<br>
+        Your Plan Can, Too.
+      </h2>
+
+      <p class="text-white/65 leading-8 mb-9">
+        A new business. An inheritance. A blended family. A major career
+        transition. Sometimes the most important conversations happen
+        long after a relationship begins.
+      </p>
+
+      <ul class="space-y-5 text-sm text-white/85">
+        <li class="flex gap-4"><span class="text-gold">✦</span> Starting or growing a business</li>
+        <li class="flex gap-4"><span class="text-gold">✦</span> Receiving an inheritance or significant assets</li>
+        <li class="flex gap-4"><span class="text-gold">✦</span> Blending families and planning for children</li>
+        <li class="flex gap-4"><span class="text-gold">✦</span> Navigating changing financial responsibilities</li>
+        <li class="flex gap-4"><span class="text-gold">✦</span> Protecting individual and shared interests</li>
+      </ul>
+
+      <a href="#contact" class="mt-11 inline-flex items-center gap-4 text-[#D9B778] text-xs uppercase tracking-widest font-semibold">
+        Let's Talk About Your Future <span class="text-xl">→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy-section pt-32 pb-28 lg:pt-40 lg:pb-32 bg-ivory">
+  <div class="max-w-[1100px] mx-auto px-6 text-center">
+
+    <div class="text-gold text-4xl serif mb-8">“</div>
+
+    <h2 class="serif text-3xl md:text-5xl leading-[1.35] text-white max-w-[900px] mx-auto">
+      A thoughtful agreement doesn't diminish a relationship.
+      It creates space for honest conversations and
+      <i>greater confidence</i> in the future.
+    </h2>
+
+    <div class="w-14 h-px bg-gold mx-auto my-10"></div>
+
+    <p class="text-[11px] uppercase tracking-[3px] text-white/75">
+      The Tuschinski Law Philosophy
+    </p>
+  </div>
+  <img src="white-logo.png"
+       alt="Tuschinski Law PLLC"
+       class="absolute bottom-6 right-6 w-32 md:w-40 lg:h-48 w-auto object-contain  p-2">
+</section>
+
+<!-- APPROACH -->
+<section id="approach" class="py-28 lg:py-36 bg-white">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+
+    <div class="grid lg:grid-cols-12 gap-14 mb-20">
+      <div class="lg:col-span-6">
+        <span class="text-gold text-[11px] tracking-[2.5px] uppercase font-semibold">
+          A More Personal Process
+        </span>
+        <h2 class="serif text-4xl md:text-5xl text-navy mt-6 leading-tight">
+          Clear Conversations.<br>
+          Thoughtful Agreements.
+        </h2>
+      </div>
+
+      <div class="lg:col-span-6 flex items-end">
+        <p class="text-muted leading-8 max-w-[530px]">
+          Legal planning should feel understandable, considered, and
+          centered on the people it serves. Our approach puts communication
+          and your individual circumstances at the heart of the process.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="border-t border-[#DCD5C8] pt-7">
+        <span class="serif text-4xl text-gold">01</span>
+        <h3 class="serif text-2xl text-navy mt-6 mb-4">Start the Conversation</h3>
+        <p class="text-muted text-sm leading-7">
+          We begin by understanding your relationship, your concerns,
+          and what you hope to accomplish.
+        </p>
+      </div>
+
+      <div class="border-t border-[#DCD5C8] pt-7">
+        <span class="serif text-4xl text-gold">02</span>
+        <h3 class="serif text-2xl text-navy mt-6 mb-4">Explore Your Options</h3>
+        <p class="text-muted text-sm leading-7">
+          We help identify the legal considerations and discuss
+          an approach that reflects your priorities.
+        </p>
+      </div>
+
+      <div class="border-t border-[#DCD5C8] pt-7">
+        <span class="serif text-4xl text-gold">03</span>
+        <h3 class="serif text-2xl text-navy mt-6 mb-4">Move Forward with Clarity</h3>
+        <p class="text-muted text-sm leading-7">
+          Work toward a carefully considered agreement
+          that supports your understanding and future plans.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" class="bg-[#EDE8DE] py-28 lg:py-36">
+  <div class="max-w-[950px] mx-auto px-6 text-center">
+
+    <div class="flex justify-center mb-7">
+      <div class="gold-line"></div>
+    </div>
+
+    <span class="text-gold text-[11px] tracking-[3px] uppercase font-semibold">
+      Your Next Chapter Starts Here
+    </span>
+
+    <h2 class="serif text-4xl md:text-6xl leading-tight text-navy mt-7 mb-8">
+      Let's Make Room for<br>
+      <i>a More Confident Future.</i>
+    </h2>
+
+    <p class="text-muted leading-8 max-w-[620px] mx-auto mb-10">
+      Whether you're just beginning to explore your options or ready
+      to take the next step, we're here to help you start the conversation.
+    </p>
+
+    <a href="mailto:<!-- INSERT FIRM EMAIL ADDRESS -->"
+       class="inline-flex bg-navy text-white px-10 py-5 text-[11px] uppercase tracking-[2px] hover:bg-gold transition">
+      Schedule a Consultation
+    </a>
+
+    <p class="text-[11px] tracking-wide text-muted mt-6">
+      A thoughtful first conversation can make all the difference.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#091B34] text-white">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-12 pt-16 pb-10">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-14">
+
+      <div class="lg:col-span-2">
+        <img src="Tuschinski-Law (2).png"
+             alt="Tuschinski Law PLLC"
+             class="w-64  p-2 mb-7">
+
+        <p class="text-white/55 text-sm leading-7 max-w-[350px]">
+          Thoughtful legal planning for relationships, families,
+          and the futures they build together.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-[#D9B778] text-[11px] uppercase tracking-[2px] mb-6">
+          Explore
+        </h4>
+        <ul class="space-y-4 text-sm text-white/65">
+          <li><a href="#about" class="hover:text-white">Our Philosophy</a></li>
+          <li><a href="#services" class="hover:text-white">Legal Services</a></li>
+          <li><a href="#approach" class="hover:text-white">Our Approach</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-[#D9B778] text-[11px] uppercase tracking-[2px] mb-6">
+          Get in Touch
+        </h4>
+        <p class="text-white/65 text-sm leading-7">
+          Tuschinski Law PLLC<br>
+          <!-- INSERT OFFICE ADDRESS -->
+          <!-- INSERT PHONE NUMBER -->
+          <!-- INSERT EMAIL ADDRESS -->
+        </p>
+        <a href="#contact" class="inline-block mt-5 text-[#D9B778] text-xs uppercase tracking-widest">
+          Begin a Conversation →
+        </a>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/15 pt-7 flex flex-col md:flex-row justify-between gap-5">
+      <p class="text-white/40 text-[11px]">
+        © 2026 Tuschinski Law PLLC. All Rights Reserved.
+      </p>
+      <p class="text-white/40 text-[11px]">
+        Attorney Advertising. Website content is for informational purposes only and does not constitute legal advice.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('menu-open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+    menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    menuBtn.textContent = isOpen ? '✕' : '☰';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('menu-open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Open menu');
+      menuBtn.textContent = '☰';
+    });
+  });
+</script>
+
+</body>
+</html>
